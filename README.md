@@ -1,113 +1,119 @@
-🧪 QA Automation - Testes com Playwright
+# 🧪 QA Automation - Playwright
 
-Projeto de automação de testes desenvolvido para validar funcionalidades básicas das páginas:
+Projeto de automação de testes desenvolvido para validar funcionalidades básicas das páginas do portal de qualidade:
 
-🔗 https://qualidade.apprbs.com.br/site
+- https://qualidade.apprbs.com.br/site
+- https://qualidade.apprbs.com.br/certificacao
 
-🔗 https://qualidade.apprbs.com.br/certificacao
+Os testes foram implementados utilizando **Playwright** com foco em **Smoke Tests** e validações funcionais iniciais.
 
-Os testes foram implementados utilizando Playwright com foco em Smoke Tests e validações funcionais básicas.
+---
 
-📋 Objetivo
+# 🎯 Objetivo
 
 Garantir que as páginas estejam:
 
-acessíveis
+- acessíveis
+- carregando corretamente
+- renderizando conteúdo
+- sem erros críticos no console
+- com elementos interativos disponíveis
 
-carregando corretamente
+---
 
-renderizando conteúdo
+# 🛠 Tecnologias Utilizadas
 
-sem erros críticos no console
+- **Playwright**
+- **Node.js**
+- **TypeScript**
+- **Brave Browser (Chromium)**
 
-com elementos interativos disponíveis
+---
 
-⚙️ Tecnologias Utilizadas
-
-Playwright
-
-Node.js
-
-TypeScript
-
-Brave Browser (Chromium)
-
-📂 Estrutura do Projeto
+# 📂 Estrutura do Projeto
 tests/
 │
 ├── apprbs.spec.ts
 ├── certificacao.spec.ts
 ├── site.spec.ts
 └── smoke.spec.ts
-Arquivo	Descrição
-apprbs.spec.ts	Testes gerais de validação das páginas
-site.spec.ts	Testes específicos da página /site
-certificacao.spec.ts	Testes específicos da página /certificacao
-smoke.spec.ts	Smoke tests para validação rápida de disponibilidade
-🚀 Como Executar os Testes
-1️⃣ Instalar dependências
+
+
+| Arquivo | Descrição |
+|--------|-----------|
+| `apprbs.spec.ts` | Testes gerais de validação das páginas |
+| `site.spec.ts` | Testes específicos da página `/site` |
+| `certificacao.spec.ts` | Testes específicos da página `/certificacao` |
+| `smoke.spec.ts` | Smoke tests para validação rápida |
+
+---
+
+# 🚀 Como Executar os Testes
+
+## 1️⃣ Instalar dependências
 npm install
-2️⃣ Instalar navegadores do Playwright
+## 2️⃣ Instalar navegadores do Playwright
 npx playwright install
-3️⃣ Executar os testes
+## 3️⃣ Executar testes
 npx playwright test
-4️⃣ Executar com interface visual
+## 4️⃣ Executar testes com interface visual
 npx playwright test --ui
-5️⃣ Abrir relatório de execução
+## 5️⃣ Visualizar relatório
 npx playwright show-report
-🧪 Escopo dos Testes
-Página /site
+
+
+---
+
+# 🧪 Escopo dos Testes
+
+## Página `/site`
 
 Validações realizadas:
 
-✅ carregamento da página com resposta válida
+- carregamento da página com resposta válida
+- validação de título
+- verificação de estrutura renderizada
+- verificação de erros críticos no console
 
-✅ validação de título da página
+---
 
-✅ verificação de estrutura renderizada
-
-✅ verificação de erros críticos no console
-
-Página /certificacao
+## Página `/certificacao`
 
 Validações realizadas:
 
-✅ carregamento da página com status válido
+- carregamento da página com status válido
+- verificação de conteúdo interativo ou formulário
+- validação de elemento clicável de ação
+- tentativa de ação vazia sem quebra da página
+- verificação de erros críticos no console
 
-✅ verificação de conteúdo interativo ou formulário
+---
 
-✅ validação de elemento clicável de ação
+# 📊 Resultado da Execução
 
-✅ tentativa de envio vazio sem quebra da página
+| Métrica | Resultado |
+|--------|-----------|
+| Total de testes | 12 |
+| Testes aprovados | 12 |
+| Testes reprovados | 0 |
+| Status | ✅ Sucesso |
 
-✅ verificação de erros críticos no console
+---
 
-Smoke Tests
+# 🔍 Evidências
 
-Executados para validação rápida da aplicação:
+Durante a execução foi possível observar que:
 
-✅ resposta válida da página /site
+- as páginas responderam corretamente
+- o conteúdo foi renderizado
+- elementos interativos estão presentes
+- não foram encontrados erros críticos no console
+- as ações realizadas não causaram quebra de página
 
-✅ resposta válida da página /certificacao
+---
 
-✅ presença de título nas páginas
+---
 
-📊 Resultado da Execução
-Métrica	Resultado
-Total de testes	12
-Testes aprovados	12
-Testes reprovados	0
-Status	✅ Sucesso
-🔍 Evidências Observadas
+# 👨‍💻 Autor
 
-Durante a execução dos testes foi possível validar que:
-
-as páginas responderam corretamente às requisições
-
-o conteúdo foi renderizado na interface
-
-elementos interativos estão presentes
-
-não foram detectados erros críticos no console
-
-as ações realizadas não causaram falhas ou quebra de página
+Projeto desenvolvido como exercício de **automação de testes QA utilizando Playwright**.
