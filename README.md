@@ -111,7 +111,10 @@ Durante a execução foi possível observar que:
 - as ações realizadas não causaram quebra de página
 
 ---
-
+# pontos de correção e melhorias 
+- QA test.xlsx
+- O arquivo está no github
+- O relatório contém críticas sobre pontos específicos com seus respectivos níveis de gravidade.
 ---
 
 # 👨‍💻 Autor
